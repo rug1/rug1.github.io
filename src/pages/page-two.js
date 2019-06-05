@@ -3,13 +3,13 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HomePage from "../components/home"
-import imgOne from "../images/d.jpg"
+import imgTwo from "../images/c.jpg"
 
-const IndexPage = () => (
+const PageTwo = () => (
   <Layout>
     <SEO title="Home" />
-    <HomePage image={imgOne} />
+    <HomePage image={imgTwo} two />
   </Layout>
 )
 
-export default IndexPage
+export default PageTwo
