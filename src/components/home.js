@@ -1,6 +1,7 @@
 import React from "react"
 
 import { HeroContainer, HeroH1, HeroH2, Cursor } from "../styledComponents/hero"
+import checkIfTabIsActive from "../utils/checkIfTabIsActive"
 
 class HomePage extends React.Component {
   state = { typeAnimationText: "", typeAnimationLineCount: 0 }
@@ -8,7 +9,8 @@ class HomePage extends React.Component {
   typeAnimationLines = ["Hello.", "I’m Ruth Uwemedimo,", "software engineer."]
 
   componentDidMount() {
-    this.typeAnimation(this.typeAnimationLines[0])
+    const startTypeAnimation = this.typeAnimation(this.typeAnimationLines[0])
+    checkIfTabIsActive(startTypeAnimation)
   }
 
   componentDidUpdate(prevProps, prevState) {
