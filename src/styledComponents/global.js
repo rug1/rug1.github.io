@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
+    background-color: ${props => props.theme.colours.primary};
+    font-family: Arial;
   }
 `
 
