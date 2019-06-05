@@ -1,12 +1,16 @@
 import styled, { keyframes } from "styled-components"
+import profile from "../images/profile.jpg"
 
 export const HeroContainer = styled.div`
   display: flex;
-  height: 100vh;
-  justify-content: ${props => (props.two ? "flex-start" : "flex-end")};
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 60px;
-  background-image: url(${props => props.image});
+  background-image: url(${profile});
   background-size: cover;
   background-position: 25% 40%;
 
@@ -26,7 +30,7 @@ export const HeroH1 = styled.h1`
   }
 `
 
-export const HeroH2 = styled.h1`
+export const HeroH2 = styled.h2`
   font-size: 50px;
   font-weight: 400;
   margin: 0;

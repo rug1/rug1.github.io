@@ -32,14 +32,14 @@ class HomePage extends React.Component {
           typeAnimationText: text.substring(0, typeAnimationText.length + 1),
         })
         this.typeAnimation(text, typeAnimationText.length + 1)
-      }, 150)
+      }, 75)
     } else {
       setTimeout(() => {
         this.setState({
           typeAnimationText: "",
           typeAnimationLineCount: typeAnimationLineCount + 1,
         })
-      }, 2000)
+      }, 1000)
     }
   }
 
@@ -54,7 +54,7 @@ class HomePage extends React.Component {
   render() {
     const { typeAnimationLineCount } = this.state
     return (
-      <HeroContainer image={this.props.image} two={this.props.two}>
+      <HeroContainer>
         <div>
           <HeroH1>{this.renderText(0)}</HeroH1>
           {typeAnimationLineCount === 0 && <Cursor big>|</Cursor>}
