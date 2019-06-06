@@ -1,5 +1,6 @@
 import React from "react"
 
+import Header from "./header"
 import { HeroContainer, HeroH1, HeroH2, Cursor } from "../styledComponents/hero"
 import checkIfTabIsActive from "../utils/checkIfTabIsActive"
 
@@ -54,26 +55,32 @@ class HomePage extends React.Component {
   render() {
     const { typeAnimationLineCount } = this.state
     return (
-      <HeroContainer>
-        <div>
-          <HeroH1>{this.renderText(0)}</HeroH1>
-          {typeAnimationLineCount === 0 && <Cursor big>|</Cursor>}
-        </div>
-
-        {typeAnimationLineCount >= 1 && (
-          <div>
-            <HeroH2>{this.renderText(1)}</HeroH2>
-            {typeAnimationLineCount === 1 && <Cursor>|</Cursor>}
-          </div>
+      <React.Fragment>
+        {this.typeAnimationLines.length === typeAnimationLineCount && (
+          <Header />
         )}
 
-        {typeAnimationLineCount >= 2 && (
+        <HeroContainer>
           <div>
-            <HeroH2>{this.renderText(2)}</HeroH2>
-            {typeAnimationLineCount === 2 && <Cursor>|</Cursor>}
+            <HeroH1>{this.renderText(0)}</HeroH1>
+            {typeAnimationLineCount === 0 && <Cursor big>|</Cursor>}
           </div>
-        )}
-      </HeroContainer>
+
+          {typeAnimationLineCount >= 1 && (
+            <div>
+              <HeroH2>{this.renderText(1)}</HeroH2>
+              {typeAnimationLineCount === 1 && <Cursor>|</Cursor>}
+            </div>
+          )}
+
+          {typeAnimationLineCount >= 2 && (
+            <div>
+              <HeroH2>{this.renderText(2)}</HeroH2>
+              {typeAnimationLineCount === 2 && <Cursor>|</Cursor>}
+            </div>
+          )}
+        </HeroContainer>
+      </React.Fragment>
     )
   }
 }

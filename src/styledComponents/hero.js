@@ -12,7 +12,8 @@ export const HeroContainer = styled.div`
   padding: 60px;
   background-image: url(${profile});
   background-size: cover;
-  background-position: 25% 40%;
+  background-position: 35% 40%;
+  z-index: -1;
 
   @media only screen and (max-width: 950px) {
     padding: 20px;
