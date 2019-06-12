@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StyledHeader, HomeIcon, NavItem } from "../styledComponents/header"
 
 const Header = props => (
-  <StyledHeader>
+  <StyledHeader headerColour={props.headerColour}>
     <ul>
       <NavItem home active={props.pathname === "/"}>
         <Link to="/">
@@ -11,12 +11,12 @@ const Header = props => (
         </Link>
       </NavItem>
 
-      <NavItem active={props.pathname === "/experience"}>
+      <NavItem active={props.pathname.includes("/experience")}>
         <Link to="/experience">Experience</Link>
       </NavItem>
 
-      <NavItem active={props.pathname === "/blog"}>Blog</NavItem>
-      <NavItem active={props.pathname === "/contact"}>
+      <NavItem active={props.pathname.includes("/blog")}>Blog</NavItem>
+      <NavItem active={props.pathname.includes("/contact")}>
         <Link to="/contact">Contact</Link>
       </NavItem>
     </ul>

@@ -2,11 +2,12 @@ import styled from "styled-components"
 import HomeIconSVG from "../svgs/home.svg"
 
 export const StyledHeader = styled.header`
-  padding: 30px 60px;
+  padding: 20px 60px;
   font-size: ${props => props.theme.fontSize.font19};
   color: #ffffff;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  background-color: ${props => props.headerColour};
 
   @media only screen and (max-width: 950px) {
     padding: 20px;

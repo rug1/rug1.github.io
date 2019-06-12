@@ -6,11 +6,11 @@ import Header from "../components/header"
 import GlobalStyle from "../styledComponents/global"
 import theme from "../styledComponents/theme"
 
-const Layout = ({ children, pathname }) => (
+const Layout = ({ children, pathname, headerColour }) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
       <GlobalStyle />
-      <Header pathname={pathname} />
+      <Header pathname={pathname} headerColour={headerColour} />
       <main>{children}</main>
     </React.Fragment>
   </ThemeProvider>

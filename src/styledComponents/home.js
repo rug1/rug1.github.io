@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components"
 import profile from "../images/profile.jpg"
 
-export const HeroContainer = styled.div`
+export const PageContainer = styled.div`
   display: flex;
   position: absolute;
   top: 0;
