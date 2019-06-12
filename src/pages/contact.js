@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
 
 import {
   PageContainer,
@@ -16,9 +15,8 @@ import {
 } from "../styledComponents/contact"
 
 const Contact = props => (
-  <Layout>
+  <Layout pathname={props.location.pathname}>
     <SEO title="Contact" />
-    <Header transparent location={props.location.pathname} />
 
     <PageContainer>
       <H1>Say hi...</H1>
