@@ -1,27 +1,22 @@
 import React from "react"
 
-import Header from "./header"
-import { HeroContainer, HeroH1, HeroH2, Cursor } from "../styledComponents/hero"
 import checkIfTabIsActive from "../utils/checkIfTabIsActive"
+import { HeroH1, HeroH2, Cursor } from "../styledComponents/home"
 
-class HomePage extends React.Component {
+class TypeAnimation extends React.Component {
   state = { typeAnimationText: "", typeAnimationLineCount: 0 }
 
-  typeAnimationLines = ["Hello.", "I’m Ruth Uwemedimo,", "software engineer."]
-
   componentDidMount() {
-    const startTypeAnimation = this.typeAnimation(this.typeAnimationLines[0])
+    const startTypeAnimation = this.typeAnimation(this.props.text[0])
     checkIfTabIsActive(startTypeAnimation)
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (
       prevState.typeAnimationLineCount !== this.state.typeAnimationLineCount &&
-      this.typeAnimationLines.length !== this.state.typeAnimationLineCount
+      this.props.text.length !== this.state.typeAnimationLineCount
     ) {
-      this.typeAnimation(
-        this.typeAnimationLines[this.state.typeAnimationLineCount]
-      )
+      this.typeAnimation(this.props.text[this.state.typeAnimationLineCount])
     }
   }
 
@@ -49,40 +44,34 @@ class HomePage extends React.Component {
 
     return typeAnimationLineCount === lineNumber
       ? typeAnimationText
-      : this.typeAnimationLines[lineNumber]
+      : this.props.text[lineNumber]
   }
 
   render() {
     const { typeAnimationLineCount } = this.state
     return (
       <React.Fragment>
-        {this.typeAnimationLines.length === typeAnimationLineCount && (
-          <Header />
+        <div>
+          <HeroH1>{this.renderText(0)}</HeroH1>
+          {typeAnimationLineCount === 0 && <Cursor big>|</Cursor>}
+        </div>
+
+        {typeAnimationLineCount >= 1 && (
+          <div>
+            <HeroH2>{this.renderText(1)}</HeroH2>
+            {typeAnimationLineCount === 1 && <Cursor>|</Cursor>}
+          </div>
         )}
 
-        <HeroContainer>
+        {typeAnimationLineCount >= 2 && (
           <div>
-            <HeroH1>{this.renderText(0)}</HeroH1>
-            {typeAnimationLineCount === 0 && <Cursor big>|</Cursor>}
+            <HeroH2>{this.renderText(2)}</HeroH2>
+            {typeAnimationLineCount === 2 && <Cursor>|</Cursor>}
           </div>
-
-          {typeAnimationLineCount >= 1 && (
-            <div>
-              <HeroH2>{this.renderText(1)}</HeroH2>
-              {typeAnimationLineCount === 1 && <Cursor>|</Cursor>}
-            </div>
-          )}
-
-          {typeAnimationLineCount >= 2 && (
-            <div>
-              <HeroH2>{this.renderText(2)}</HeroH2>
-              {typeAnimationLineCount === 2 && <Cursor>|</Cursor>}
-            </div>
-          )}
-        </HeroContainer>
+        )}
       </React.Fragment>
     )
   }
 }
 
-export default HomePage
+export default TypeAnimation
