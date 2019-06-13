@@ -15,7 +15,9 @@ const Header = props => (
         <Link to="/experience">Experience</Link>
       </NavItem>
 
-      <NavItem active={props.pathname.includes("/blog")}>Blog</NavItem>
+      <NavItem active={props.pathname.includes("/blog")}>
+        <Link to="/blog">Blog</Link>
+      </NavItem>
       <NavItem active={props.pathname.includes("/contact")}>
         <Link to="/contact">Contact</Link>
       </NavItem>

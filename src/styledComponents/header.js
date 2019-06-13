@@ -8,6 +8,7 @@ export const StyledHeader = styled.header`
   width: 100%;
   position: fixed;
   background-color: ${props => props.headerColour};
+  z-index: 100;
 
   @media only screen and (max-width: 950px) {
     padding: 20px;

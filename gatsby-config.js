@@ -27,6 +27,18 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@ruthuwemedimo`,
+      },
+    },
+    {
+      resolve: `gatsby-source-medium`,
+      options: {
+        username: `@rebecca.radding`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
