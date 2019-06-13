@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
   font-size: ${props => props.theme.fontSize.font19};
   color: ${props => props.headerTextColour || "#ffffff"};
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 100;
   background-color: ${props => props.headerColour};
 
