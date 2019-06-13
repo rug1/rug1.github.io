@@ -4,11 +4,11 @@ import HomeIconSVG from "../svgs/home.svg"
 export const StyledHeader = styled.header`
   padding: 20px 60px;
   font-size: ${props => props.theme.fontSize.font19};
-  color: #ffffff;
+  color: ${props => props.headerTextColour || "#ffffff"};
   width: 100%;
   position: fixed;
-  background-color: ${props => props.headerColour};
   z-index: 100;
+  background-color: ${props => props.headerColour};
 
   @media only screen and (max-width: 950px) {
     padding: 20px;
@@ -19,13 +19,16 @@ export const StyledHeader = styled.header`
     margin: 0;
     padding: 0;
   }
+
+  svg {
+    fill: ${props => props.headerTextColour || "#ffffff"};
+  }
 `
 
 export const HomeIcon = styled(HomeIconSVG)`
   width: 30px;
   height: 30px;
   vertical-align: bottom;
-  fill: #ffffff;
 `
 
 export const NavItem = styled.li`
