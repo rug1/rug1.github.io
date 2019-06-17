@@ -14,7 +14,6 @@ export const SectionContainer = styled.div`
 export const SectionHeading = styled.h1`
   font-size: ${props => props.theme.fontSize.font80};
   color: ${props => props.colour};
-  text-align: center;
   margin-right: ${props => props.theme.spacing.lg};
   margin-left: ${props => props.theme.spacing.lg};
 
@@ -24,21 +23,19 @@ export const SectionHeading = styled.h1`
 `
 
 export const SectionSubHeading = styled.h2`
-  font-size: ${props => props.theme.fontSize.font36};
+  font-size: ${props => props.theme.fontSize.font27};
   color: ${props => props.colour};
-  text-align: center;
   margin-right: ${props => props.theme.spacing.lg};
   margin-left: ${props => props.theme.spacing.lg};
 
   @media only screen and (max-width: 600px) {
-    font-size: ${props => props.theme.fontSize.font27};
+    font-size: ${props => props.theme.fontSize.font24};
   }
 `
 
 export const SectionText = styled.p`
   font-size: ${props => props.theme.fontSize.font24};
   line-height: 1.5em;
-  text-align: center;
   color: ${props => props.colour};
   max-width: 1000px;
   margin: 0 ${props => props.theme.spacing.lg};
@@ -48,9 +45,19 @@ export const SectionText = styled.p`
   }
 `
 
+const FadeIn = keyframes`
+  0%, 50%, 75% {
+    opacity: 0;
+  }
+  100%  {
+    opacity: 1;
+  }
+`
+
 export const ScrollIcon = styled.div`
   position: absolute;
   bottom: 20px;
+  animation: ${FadeIn} 4s;
 
   p {
     margin: 0;

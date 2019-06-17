@@ -75,14 +75,20 @@ class Experience extends React.Component {
         <SEO title="Experience" />
 
         <SectionContainer colour="#555b6e">
-          <SectionHeading colour="#ffffff">Experience</SectionHeading>
-          <SectionText colour="#ccd6e2">
-            Software engineer who’s always learning new technologies and keeping
-            up to date with the recent tech trends and best practices.
-            Experience with React and GraphQL, I focus on ways to improve
-            consistency and reusability on the frontend. Passionate about
-            accessibility.
-          </SectionText>
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce
+            style={{ marginBottom: "52px" }}
+          >
+            <SectionHeading colour="#ffffff">Experience</SectionHeading>
+            <SectionText colour="#ccd6e2">
+              Software engineer who’s always learning new technologies and
+              keeping up to date with the recent tech trends and best practices.
+              Experience with React and GraphQL, I focus on ways to improve
+              consistency and reusability on the frontend. Passionate about
+              accessibility.
+            </SectionText>
+          </ScrollAnimation>
           <ScrollIcon>
             <ChevronDown />
             <p>scroll</p>
