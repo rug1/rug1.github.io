@@ -1,5 +1,4 @@
 import React from "react"
-import ScrollAnimation from "react-animate-on-scroll"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +9,7 @@ import {
   SectionText,
   ScrollIcon,
   ChevronDown,
+  ScrollAnimationWrapper,
 } from "../styledComponents/experience"
 
 class Experience extends React.Component {
@@ -75,11 +75,7 @@ class Experience extends React.Component {
         <SEO title="Experience" />
 
         <SectionContainer colour="#555b6e">
-          <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce
-            style={{ marginBottom: "52px" }}
-          >
+          <ScrollAnimationWrapper animateOnce offset={150}>
             <SectionHeading colour="#ffffff">Experience</SectionHeading>
             <SectionText colour="#ccd6e2">
               Software engineer who’s always learning new technologies and
@@ -88,7 +84,7 @@ class Experience extends React.Component {
               consistency and reusability on the frontend. Passionate about
               accessibility.
             </SectionText>
-          </ScrollAnimation>
+          </ScrollAnimationWrapper>
           <ScrollIcon>
             <ChevronDown />
             <p>scroll</p>
@@ -96,7 +92,7 @@ class Experience extends React.Component {
         </SectionContainer>
 
         <SectionContainer colour="#ECDBFF">
-          <ScrollAnimation animateIn="fadeIn" offset={500}>
+          <ScrollAnimationWrapper>
             <SectionHeading colour="#7948B2">Personably</SectionHeading>
             <SectionSubHeading colour="#7948B2">
               Software Engineer, Feb 2017–present
@@ -126,11 +122,11 @@ class Experience extends React.Component {
               on how we achieved running Cypress tests in Continuous
               Integration.
             </SectionText>
-          </ScrollAnimation>
+          </ScrollAnimationWrapper>
         </SectionContainer>
 
-        <SectionContainer animateIn="fadeIn" colour="#AC29B5">
-          <ScrollAnimation animateIn="fadeIn" offset={500}>
+        <SectionContainer colour="#AC29B5">
+          <ScrollAnimationWrapper>
             <SectionHeading colour="#ffffff">JustGiving</SectionHeading>
             <SectionSubHeading colour="#ffffff">
               Junior Frontend Developer, April 2016–Feb 2017
@@ -141,11 +137,11 @@ class Experience extends React.Component {
               frontend developers to build projects in React, Redux and
               TypeScript.
             </SectionText>
-          </ScrollAnimation>
+          </ScrollAnimationWrapper>
         </SectionContainer>
 
-        <SectionContainer animateIn="fadeIn" colour="#ccd6e2">
-          <ScrollAnimation animateIn="fadeIn" offset={500}>
+        <SectionContainer colour="#ccd6e2">
+          <ScrollAnimationWrapper>
             <SectionHeading colour="#000000">Freelance</SectionHeading>
             <SectionSubHeading colour="#000000">
               Full Stack Developer, Aug 2016–March 2017
@@ -157,11 +153,11 @@ class Experience extends React.Component {
               the client’s offices in California for 2 weeks. As well as many
               other smaller contracts.
             </SectionText>
-          </ScrollAnimation>
+          </ScrollAnimationWrapper>
         </SectionContainer>
 
-        <SectionContainer animateIn="fadeIn" colour="#121212">
-          <ScrollAnimation animateIn="fadeIn" offset={500}>
+        <SectionContainer colour="#121212">
+          <ScrollAnimationWrapper>
             <SectionHeading colour="#ffffff">
               Founders and Coders
             </SectionHeading>
@@ -176,7 +172,21 @@ class Experience extends React.Component {
               Founders and Coders freelance cooperative working on MVP projects
               using a range of technologies.
             </SectionText>
-          </ScrollAnimation>
+          </ScrollAnimationWrapper>
+        </SectionContainer>
+
+        <SectionContainer colour="#ffffff">
+          <ScrollAnimationWrapper>
+            <SectionHeading colour="#005DAB">
+              Univeristy of Exeter
+            </SectionHeading>
+            <SectionSubHeading colour="#005DAB">
+              Student, 2011–2014
+            </SectionSubHeading>
+            <SectionText colour="#000000">
+              Achieved 2:1 in Mathematics and Philosophy
+            </SectionText>
+          </ScrollAnimationWrapper>
         </SectionContainer>
       </Layout>
     )

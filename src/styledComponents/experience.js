@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import ScrollAnimation from "react-animate-on-scroll"
 
 import ChevronDownIcon from "../svgs/chevron-down.svg"
 
@@ -9,6 +10,13 @@ export const SectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+`
+
+export const ScrollAnimationWrapper = styled(ScrollAnimation).attrs({
+  animateIn: "fadeIn",
+  offset: 500,
+})`
+  margin-bottom: ${props => props.theme.spacing.xxl};
 `
 
 export const SectionHeading = styled.h1`
