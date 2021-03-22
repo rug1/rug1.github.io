@@ -1,48 +1,41 @@
 import styled from "styled-components"
-import HomeIconSVG from "../svgs/home.svg"
+import { Link } from "gatsby"
 
 export const StyledHeader = styled.header`
-  padding: 20px 60px;
-  font-size: ${props => props.theme.fontSize.font19};
-  color: ${props => props.headerTextColour || "#ffffff"};
+  padding: 20px;
+  font-size: ${({ theme }) => theme.fontSize.font16};
   width: 100%;
-  position: absolute;
   z-index: 100;
-  background-color: ${props => props.headerColour};
-
-  @media only screen and (max-width: 950px) {
-    padding: 20px;
-  }
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-
-  svg {
-    fill: ${props => props.headerTextColour || "#ffffff"};
-  }
 `
 
-export const HomeIcon = styled(HomeIconSVG)`
-  width: 30px;
-  height: 30px;
-  vertical-align: bottom;
-`
-
-export const NavItem = styled.li`
+export const NavItem = styled(Link)`
   display: inline-block;
   margin-right: ${props =>
     props.home ? props.theme.spacing.lg : props.theme.spacing.md};
   cursor: pointer;
   padding-bottom: 2px;
-  border-bottom: ${props =>
-    props.active ? `3px solid ${props.theme.colours.primary}` : ""};
+  border: ${({ theme, active, home }) => 
+    active && home ? `2px solid ${theme.colours.darkest}` : "2px solid transparent"};
+  border-bottom: ${({ theme, active, home }) =>
+    active && !home ? `3px solid ${theme.colours.light}` : ""};
+  line-height: 24px;
+  text-decoration: none;
+  color: ${({ path }) => path === '/' ? "#ffffff" : "#000000"};
+  font-weight: ${({ active }) => active ? "600" : "300"};
 
-  a {
-    color: inherit;
-    text-decoration: none;
+  &:first-child {
+    background-color: ${({ theme }) => theme.colours.light};
+    border-radius: 100%;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
   }
 
   &:last-child {

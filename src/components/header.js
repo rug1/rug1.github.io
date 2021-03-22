@@ -1,29 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
 import { StyledHeader, HomeIcon, NavItem } from "../styledComponents/header"
 
 const Header = props => (
-  <StyledHeader
-    headerColour={props.headerColour}
-    headerTextColour={props.headerTextColour}
-  >
+  <StyledHeader>
     <ul>
-      <NavItem home active={props.pathname === "/"}>
-        <Link to="/">
-          <HomeIcon />
-        </Link>
+      <NavItem to="/" home path={props.pathname} active={props.pathname === "/"}>
+        <li>R</li>
       </NavItem>
 
-      <NavItem active={props.pathname.includes("/experience")}>
-        <Link to="/experience">Experience</Link>
+      {/* <NavItem to="/experience" active={props.pathname.includes("/experience")}>
+        <li>Experience</li>
+      </NavItem> */}
+
+      <NavItem to="/blog" path={props.pathname} active={props.pathname.includes("/blog")}>
+        <li>Blog</li>
       </NavItem>
 
-      <NavItem active={props.pathname.includes("/blog")}>
-        <Link to="/blog">Blog</Link>
-      </NavItem>
-      <NavItem active={props.pathname.includes("/contact")}>
-        <Link to="/contact">Contact</Link>
-      </NavItem>
+      {/* <NavItem to="/contact" active={props.pathname.includes("/contact")}>
+        <li>Contact</li>
+      </NavItem> */}
     </ul>
   </StyledHeader>
 )
