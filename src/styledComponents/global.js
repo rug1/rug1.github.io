@@ -1,18 +1,15 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Nunito Sans';
-    src: url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
-  }
-
   * {
     box-sizing: border-box;
   }
 
   body {
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Inter';
+    background-color: ${({ theme }) => theme.colours.white};
+    color: ${({ theme }) => theme.colours.black};
   }
 `
 

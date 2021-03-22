@@ -1,8 +1,11 @@
 const theme = {
   colours: {
-    primary: "#00D646",
-    secondary: "#555b6e",
-    tertiary: "#ccd6e2",
+    lightest: "#f8a1d1",
+    light: "#e36bae",
+    dark: "#b34180",
+    darkest: "#822659",
+    white: "#f8f8ff",
+    black: "#222222",
   },
   spacing: {
     xxs: "4px",
@@ -15,6 +18,7 @@ const theme = {
   },
   fontSize: {
     font80: "80px",
+    font64: "64px",
     font48: "48px",
     font36: "36px",
     font27: "27px",
