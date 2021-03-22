@@ -16,9 +16,9 @@ const Header = props => (
         <li>Blog</li>
       </NavItem>
 
-      {/* <NavItem to="/contact" active={props.pathname.includes("/contact")}>
+      <NavItem to="/contact" path={props.pathname} active={props.pathname.includes("/contact")}>
         <li>Contact</li>
-      </NavItem> */}
+      </NavItem>
     </ul>
   </StyledHeader>
 )
