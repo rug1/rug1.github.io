@@ -152,3 +152,7 @@ You can track the progress of `fetch` support [here](https://github.com/cypress-
 After trying two CI platforms and working through the issues that made our tests flaky it was great to see the green success tick against our test suite! 🎉✅✅✅
 
 ![Circle CI success](https://miro.medium.com/max/1400/0*_Yi0qIeyGS3XmSo-.png)
+
+### · · ·
+
+_Originally published at https://www.personably.co on April 26, 2018._

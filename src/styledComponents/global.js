@@ -15,11 +15,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: ${({theme}) => theme.colours.light};
+    color: ${({theme}) => theme.colours.black};
     text-decoration: underline;
 
     &:hover {
-      color: ${({theme}) => theme.colours.darkest};
+      color: ${({theme}) => theme.colours.light};
     }
   }
 `

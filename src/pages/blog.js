@@ -39,7 +39,11 @@ const Blog = props => {
           <div>
             <BlogImage><img src="https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="" /></BlogImage>
             <BlogText>Jun 29, 2020</BlogText>
-            <BlogTitle>Top tips to finding your way around a new codebase</BlogTitle>
+            <BlogTitle>
+              <Link to="/blog/top-tips-to-finding-your-way-around-a-new-codebase">
+                Top tips to finding your way around a new codebase
+              </Link>
+            </BlogTitle>
             <BlogText>Almost a year ago, I joined Lantum: a company with a mission to save the NHS £1 billion in staffing agency fees.
             The team at Lantum are great, and everyone is so welcoming to new joiners, which helped me enormously to feel comfortable in my new role as a Senior Frontend Engineer...</BlogText>
           </div>
@@ -47,7 +51,11 @@ const Blog = props => {
           <div>
             <BlogImage><img src="https://miro.medium.com/max/4000/1*GGSwLXhkkySIwm0wisRfGA.jpeg" alt="" /></BlogImage>
             <BlogText>May 13, 2019</BlogText>
-            <BlogTitle>Alex and Ruth go to events: ReactJS Girls Conference 2019</BlogTitle>
+            <BlogTitle>
+              <Link to="/blog/alex-and-ruth-go-to-events-reactJS-girls-conference-2019">
+                Alex and Ruth go to events: ReactJS Girls Conference 2019
+              </Link>
+            </BlogTitle>
             <BlogText>Alex and Ruth: The two of us were really excited to go to the conference together. We’re at very different
             stages of learning but the ReactJS Girls Conference is open to all those interested in JavaScript and React...</BlogText>
           </div>
@@ -67,7 +75,11 @@ const Blog = props => {
           <div>
             <BlogImage><img src="https://miro.medium.com/max/1400/1*Wq6c-ZFeimwPTgmrXtY6wA.jpeg" alt="" /></BlogImage>
             <BlogText>Oct 4, 2018</BlogText>
-            <BlogTitle>The story of building Macaw UI</BlogTitle>
+            <BlogTitle>
+              <Link to="/blog/the-story-of-building-macaw-ui">
+                The story of building Macaw UI
+                </Link>
+            </BlogTitle>
             <BlogText>We now have our own component library — Macaw UI, which is how we’ll be keeping our 
             design and brand consistent throughout our product...</BlogText>
           </div>

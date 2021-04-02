@@ -33,7 +33,7 @@ export default function Template({
           <AuthorTag>
             <AuthorImg src={Photo} />
             <div>
-              <Author>Ruth Uwemedimo</Author>
+              <Author>{frontmatter.author || "Ruth Uwemedimo"}</Author>
               <Date>{frontmatter.date}</Date>
             </div>
           </AuthorTag>
@@ -59,6 +59,7 @@ export const pageQuery = graphql`
         slug
         title
         image
+        author
       }
     }
   }

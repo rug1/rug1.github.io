@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 import { VIEW_HEIGHT } from './global'
 
 const MAX_HEIGHT = '850px';
+const MAX_WIDTH = '770px';
 const MEDIUM_BREAKPOINT = '1200px'
 const SMALL_BREAKPOINT = '1000px'
 
@@ -24,7 +25,7 @@ const smallHeroContent = css`
   padding: 0 ${({ theme }) => theme.spacing.sm};
   margin: ${({ theme }) => theme.spacing.lg} auto;
   width: 100%;
-  max-width: 750px;
+  max-width: ${MAX_WIDTH};
 `
 
 export const Hero = styled.div`
@@ -134,7 +135,7 @@ export const AuthorImg = styled.img`
 
 export const ContentWrapper = styled.div`
   padding: ${({ theme }) => `${theme.spacing.lg} ${theme.spacing.sm}`};
-  max-width: 750px;
+  max-width: ${MAX_WIDTH};
   margin: 0 auto;
   line-height: 24px;
 
@@ -144,6 +145,7 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
+    line-height: 32px;
     margin-top: ${({ theme }) => theme.spacing.xl};
   }
 
