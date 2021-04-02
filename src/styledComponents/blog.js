@@ -42,14 +42,21 @@ export const BlogText = styled.p`
 export const BlogTitle = styled.h2`
   font-size: ${({ theme, hero }) => hero ? theme.fontSize.font36 : theme.fontSize.font24};
   cursor: pointer;
+  text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  a {
+    color: ${({ theme }) => theme.colours.black};
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      color: ${({theme}) => theme.colours.darkest};
+    }
   }
 `
 
 export const Featured = styled.span`
-  color: #e36bae;
+  color: ${({ theme }) => theme.colours.light};
   font-weight: bold;
 `
 
