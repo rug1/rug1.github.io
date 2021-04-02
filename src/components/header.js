@@ -1,23 +1,24 @@
 import React from "react"
-import { StyledHeader, HomeIcon, NavItem } from "../styledComponents/header"
+import { Link } from 'gatsby'
+import { StyledHeader, NavItem } from "../styledComponents/header"
 
-const Header = props => (
+const Header = ({ pathname }) => (
   <StyledHeader>
     <ul>
-      <NavItem to="/" home path={props.pathname} active={props.pathname === "/"}>
-        <li>R</li>
+      <NavItem home path={pathname} active={pathname === "/"}>
+        <Link to="/">R</Link>
       </NavItem>
 
-      {/* <NavItem to="/experience" active={props.pathname.includes("/experience")}>
-        <li>Experience</li>
+      {/* <NavItem to="/experience" active={pathname.includes("/experience")}>
+        <Link>Experience</Link>
       </NavItem> */}
 
-      <NavItem to="/blog" path={props.pathname} active={props.pathname.includes("/blog")}>
-        <li>Blog</li>
+      <NavItem path={pathname} active={pathname.includes("/blog")}>
+        <Link to="/blog">Blog</Link>
       </NavItem>
 
-      <NavItem to="/contact" path={props.pathname} active={props.pathname.includes("/contact")}>
-        <li>Contact</li>
+      <NavItem path={pathname} active={pathname.includes("/contact")}>
+        <Link to="/contact">Contact</Link>
       </NavItem>
     </ul>
   </StyledHeader>
