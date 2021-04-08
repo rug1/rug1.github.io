@@ -45,12 +45,10 @@ export const BlogTitle = styled.h2`
   text-decoration: none;
 
   a {
-    color: ${({ theme }) => theme.colours.black};
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
-      color: ${({theme}) => theme.colours.darkest};
     }
   }
 `

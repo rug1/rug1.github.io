@@ -41,10 +41,10 @@ export const Hero = styled.div`
     ${backgroundImage};
     max-height: ${MAX_HEIGHT};
     opacity: 0.85;
-    box-shadow: inset 1300px 0 150px -550px ${({ theme }) => theme.colours.white};
+    box-shadow: inset 1300px 0 150px -550px ${({ theme }) => theme.bodyColour};
 
     @media only screen and (max-width: ${MEDIUM_BREAKPOINT}) {
-      box-shadow: inset 1200px 0 150px -550px ${({ theme }) => theme.colours.white};
+      box-shadow: inset 1200px 0 150px -550px ${({ theme }) => theme.bodyColour};
     }
 
     @media only screen and (max-width: ${SMALL_BREAKPOINT}) {

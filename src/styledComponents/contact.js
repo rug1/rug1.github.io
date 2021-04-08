@@ -50,10 +50,10 @@ export const Circle = styled.div`
   margin: ${({ theme }) => theme.spacing.md};
 
   &:hover {
-    background-color: ${({ theme }) => theme.colours.darkest};
+    background-color: ${({ theme }) => theme.colours.lightest};
 
     svg {
-      stroke: ${({ theme }) => theme.colours.lightest};
+      stroke: ${({ theme }) => theme.colours.darkest};
     }
   }
 `
@@ -62,7 +62,7 @@ const SocialMediaIconStyling = css`
   width: 40px;
   height: 40px;
   transition: stroke 0.5s;
-  stroke: ${({ theme }) => theme.colours.darkest};
+  stroke: ${({ theme }) => theme.colours.light};
 `
 
 export const Twitter = styled(TwitterIcon)`

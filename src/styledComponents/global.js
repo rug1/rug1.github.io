@@ -10,12 +10,13 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Inter';
-    background-color: ${({ theme }) => theme.colours.white};
-    color: ${({ theme }) => theme.colours.black};
+    background-color: ${({ theme }) => theme.bodyColour};
+    color: ${({ theme }) => theme.textColour};
+    transition: all 0.3s linear;
   }
 
   a {
-    color: ${({theme}) => theme.colours.black};
+    color: ${({theme}) => theme.textColour};
     text-decoration: underline;
 
     &:hover {

@@ -5,11 +5,14 @@ export const StyledHeader = styled.header`
   font-size: ${({ theme }) => theme.fontSize.font16};
   width: 100%;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: inline-block;
   }
 `
 
@@ -28,11 +31,11 @@ export const NavItem = styled.li`
   font-weight: ${({ active }) => active ? "600" : "300"};
 
   a {
-    color: ${({ path }) => path === '/' ? "#ffffff" : "#000000"};
+    color: ${({ theme, path }) => path === '/' ? "#ffffff" : theme.textColour};
     text-decoration: none;
 
     &:hover {
-      color: ${({ path }) => path === '/' ? "#ffffff" : "#000000"};
+      color: ${({ theme, path }) => path === '/' ? "#ffffff" : theme.textColour};
     }
   }
 
@@ -48,4 +51,59 @@ export const NavItem = styled.li`
   &:last-child {
     margin-right: 0px;
   }
+`
+
+export const Switch = styled.label`
+  display: flex;
+  height: 36px;
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+
+  input {
+    display: none;
+  }
+
+  input:checked + .slider {
+    background-color: ${({ theme }) => theme.bodyColour};
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(34px);
+    border-color: ${({ theme }) => theme.textColour};
+    background-color: ${({ theme }) => theme.textColour};
+  }
+`
+
+export const Slider = styled.div`
+  background-color: ${({ theme }) => theme.colours.white};
+  border: 1px solid ${({ theme }) => theme.textColour};
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+
+  &:before {
+    background-color: ${({ theme }) => theme.colours.black};
+    border: 1px solid ${({ theme }) => theme.colours.white};
+    bottom: 3px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+`
+
+export const Toggle = styled.div`
+  width: 50%;
+  text-align: center;
+  padding: 0.25em;
+  position: relative;
 `

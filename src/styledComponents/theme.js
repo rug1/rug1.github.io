@@ -29,4 +29,14 @@ const theme = {
   },
 }
 
-export default theme
+export const lightTheme = {
+  ...theme,
+  bodyColour: theme.colours.white,
+  textColour: theme.colours.black
+}
+
+export const darkTheme = {
+  ...theme,
+  bodyColour: theme.colours.black,
+  textColour: theme.colours.white
+}
