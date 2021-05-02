@@ -18,12 +18,13 @@ export const H1 = styled.h1`
   font-size: ${props => props.theme.fontSize.font80};
 
   @media only screen and (max-width: 420px) {
+    margin-top: ${props => props.theme.spacing.sm};
     font-size: ${props => props.theme.fontSize.font64};
   }
 `
 
 export const BlogImage = styled.div`
-  height: ${({ hero }) => hero ? '400px' : '200px'};
+  max-height: ${({ hero }) => hero ? '400px' : '200px'};
   max-width: 550px;
   overflow: hidden;
   border-radius: 10px;
@@ -36,7 +37,6 @@ export const BlogImage = styled.div`
 
 export const BlogText = styled.p`
   font-size: ${props => props.theme.fontSize.font14};
-  line-height: 18px;
 `
 
 export const BlogTitle = styled.h2`

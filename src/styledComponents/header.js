@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledHeader = styled.header`
-  padding: ${({ theme }) => theme.spacing.md};
+  padding: ${({ theme }) => `${theme.spacing.sm} ${theme.spacing.lg}`};
   font-size: ${({ theme }) => theme.fontSize.font16};
   width: 100%;
   z-index: 100;
@@ -14,6 +14,10 @@ export const StyledHeader = styled.header`
     padding: 0;
     display: inline-block;
   }
+
+  @media only screen and (max-width: 950px) {
+    padding: ${({ theme }) => `${theme.spacing.md} ${theme.spacing.sm}`};
+  }
 `
 
 export const NavItem = styled.li`
@@ -22,20 +26,18 @@ export const NavItem = styled.li`
     props.home ? props.theme.spacing.lg : props.theme.spacing.md};
   cursor: pointer;
   padding-bottom: 2px;
-  border: ${({ theme, active, home }) => 
-    active && home ? `2px solid ${theme.colours.darkest}` : "2px solid transparent"};
   border-bottom: ${({ theme, active, home }) =>
     active && !home ? `3px solid ${theme.colours.light}` : ""};
-  line-height: 24px;
+  line-height: 26px;
   text-decoration: none;
-  font-weight: ${({ active }) => active ? "600" : "300"};
+  font-weight: 600;
 
   a {
-    color: ${({ theme, path }) => path === '/' ? "#ffffff" : theme.textColour};
+    color: ${({ theme, path }) => path === '/' ? theme.colours.white : theme.textColour};
     text-decoration: none;
 
     &:hover {
-      color: ${({ theme, path }) => path === '/' ? "#ffffff" : theme.textColour};
+      color: ${({ theme, path }) => path === '/' ? theme.colours.white : theme.textColour};
     }
   }
 

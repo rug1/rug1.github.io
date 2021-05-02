@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
-export const VIEW_HEIGHT = 'calc(100vh - 80px)';
+export const VIEW_HEIGHT = 'calc(100vh - 64px)';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -13,6 +13,10 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${({ theme }) => theme.bodyColour};
     color: ${({ theme }) => theme.textColour};
     transition: all 0.3s linear;
+  }
+
+  p {
+    line-height: 21px;
   }
 
   a {

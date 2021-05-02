@@ -137,7 +137,10 @@ export const ContentWrapper = styled.div`
   padding: ${({ theme }) => `${theme.spacing.lg} ${theme.spacing.sm}`};
   max-width: ${MAX_WIDTH};
   margin: 0 auto;
-  line-height: 24px;
+
+  p {
+    line-height: 24px;
+  }
 
   p:first-child {
     font-size: 1.2em;
@@ -162,6 +165,7 @@ export const ContentWrapper = styled.div`
 
     code {
       background: ${({theme}) => theme.colours.black};
+      color: ${({theme}) => theme.colours.white};
       overflow-x: scroll;
       display: block;  
     }
@@ -169,6 +173,7 @@ export const ContentWrapper = styled.div`
 
   code {
     background: #eaeaea;
+    color: ${({theme}) => theme.colours.black};
     padding: ${({ theme }) => `2px ${theme.spacing.xxs}`};
     border-radius: 3px;
   }

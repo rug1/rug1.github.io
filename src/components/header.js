@@ -23,19 +23,24 @@ const Header = ({ pathname, themeToggler, theme }) => {
           <Link to="/contact">Contact</Link>
         </NavItem>
       </ul>
-      {pathname !== "/" && (
-        <Switch for="checkbox" title="Change color scheme to dark mode">
-          <input
-            type="checkbox"
-            id="checkbox"
-            onChange={themeToggler} 
-            checked={theme !== LIGHT_THEME}
-          />
-          <Slider className="slider" />
-          <Toggle>🌙</Toggle>
-          <Toggle>☀️</Toggle>
-        </Switch>
-      )}
+
+        {pathname !== "/" && (
+          <Switch for="checkbox" title="Change color scheme to dark mode">
+            <input
+              type="checkbox"
+              id="checkbox"
+              onChange={themeToggler} 
+              checked={theme !== LIGHT_THEME}
+            />
+            <Slider className="slider" />
+            <Toggle>
+              <span role="img" aria-label="dark mode">🌙</span>
+            </Toggle>
+            <Toggle>
+              <span role="img" aria-label="light mode">☀️</span>
+            </Toggle>
+          </Switch>
+        )}
     </StyledHeader>
   )
 }
