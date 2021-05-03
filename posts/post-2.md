@@ -3,6 +3,7 @@ slug: "/blog/the-story-of-building-macaw-ui"
 date: "2018-10-04"
 title: "The story of building Macaw UI"
 image: "https://miro.medium.com/max/1400/1*Wq6c-ZFeimwPTgmrXtY6wA.jpeg"
+canonicalURL: "https://personably.co/blog/the-story-of-building-macaw-ui"
 ---
 
 We now have our own component library — Macaw UI, which is how we’ll be keeping our design and brand consistent throughout our product. You can see our library published [here](https://personably.github.io/component-library) and this is the story of how we got to this point.

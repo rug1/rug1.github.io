@@ -3,6 +3,7 @@ slug: "/blog/top-tips-to-finding-your-way-around-a-new-codebase"
 date: "2020-06-29"
 title: "Top tips to finding your way around a new codebase"
 image: "https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+canonicalURL: "http://blog.lantum.com/top-tips-to-finding-your-way-around-a-new-codebase"
 ---
 
 Almost a year ago, I joined Lantum: a company with a mission to save the NHS £1 billion in staffing agency fees.

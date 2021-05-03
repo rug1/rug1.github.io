@@ -3,6 +3,7 @@ slug: "/blog/how-we-got-cypress-running-solid-tests-in-continuous-integration"
 date: "2018-04-26"
 title: "How we got Cypress running solid tests in Continuous Integration"
 image: "https://miro.medium.com/max/7776/1*z7aahOChZZxNfMInuGUN4w.jpeg"
+canonicalURL: "https://personably.co/blog/cypress-tests-continuous-integration"
 ---
 
 It was time to start writing end to end tests for [Personably](https://personably.co/). We wanted to maintain a smooth UX and save our users from experiencing broken flows. As our product grew, it naturally became harder to test this manually and the need for automated testing became more important.

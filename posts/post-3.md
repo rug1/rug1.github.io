@@ -4,6 +4,7 @@ date: "2019-05-13"
 title: "Alex and Ruth go to events: ReactJS Girls Conference 2019"
 image: "https://miro.medium.com/max/1400/1*GGSwLXhkkySIwm0wisRfGA.jpeg"
 author: "Ruth Uwemedimo & Alexandra O'Mahony"
+canonicalURL: "https://personably.co/blog/alex-and-ruth-go-to-events-reactjs-girls-conference-2019"
 ---
 
 Alex and Ruth: The two of us were really excited to go to the conference together. We’re at _very_ different stages of learning but the [ReactJS Girls Conference](https://reactjsgirls.com/) is open to all those interested in JavaScript and React, no matter where they are on their learning journey! Alex is a newbie to coding and Ruth is our Software Engineer and really familiar with React so we each have lots of different things we learnt from the day. We couldn’t write about every talk but you can [watch the full conference on YouTube](https://www.youtube.com/watch?v=dkl6sYff2C8&ab_channel=TechTalksYLD).
