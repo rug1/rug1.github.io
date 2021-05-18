@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.3s linear;
   }
 
-  p {
+  p, li {
     line-height: 21px;
   }
 

@@ -138,7 +138,7 @@ export const ContentWrapper = styled.div`
   max-width: ${MAX_WIDTH};
   margin: 0 auto;
 
-  p {
+  p, li {
     line-height: 24px;
   }
 

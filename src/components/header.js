@@ -25,10 +25,10 @@ const Header = ({ pathname, themeToggler, theme }) => {
       </ul>
 
         {pathname !== "/" && (
-          <Switch for="checkbox" title="Change color scheme to dark mode">
+          <Switch htmlFor="themeToggle" title="Change color scheme to dark mode">
             <input
               type="checkbox"
-              id="checkbox"
+              id="themeToggle"
               onChange={themeToggler} 
               checked={theme !== LIGHT_THEME}
             />
