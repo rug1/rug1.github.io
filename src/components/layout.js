@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { ThemeProvider } from "styled-components"
 
 import Header from "../components/header"
+import { Subscribe } from "./Subscribe"
+
 import GlobalStyles from "../styledComponents/global"
 import { ThemeContext } from "./provider";
 import { lightTheme, darkTheme } from "../styledComponents/theme"
@@ -25,6 +27,9 @@ const Layout = ({ children, pathname }) => (
               theme={context.theme}
             />
             <main>{children}</main>
+            {pathname.includes('blog') && (
+              <Subscribe />
+            )}
           </React.Fragment>
         </ThemeProvider>
     )}}
