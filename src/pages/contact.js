@@ -19,7 +19,7 @@ const Contact = props => (
     <SEO title="Contact" />
 
     <PageContainer>
-      <H1>Say hi...</H1>
+      <H1>Say hi....</H1>
       <H2>You can find me at</H2>
       <div style={{ textAlign: "center" }}>
         <a
