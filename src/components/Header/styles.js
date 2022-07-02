@@ -106,6 +106,6 @@ export const Slider = styled.div`
 export const Toggle = styled.div`
   width: 50%;
   text-align: center;
-  padding: 0.25em;
+  padding: 8px;
   position: relative;
 `

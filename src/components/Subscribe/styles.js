@@ -16,6 +16,11 @@ export const SubscribeForm = styled.form`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 export const SubscribeText = styled.p`
@@ -24,7 +29,6 @@ export const SubscribeText = styled.p`
 `
 
 export const SubscribeInput = styled.input`
-  margin-right: 12px;
   padding: 6px;
   border-radius: 4px;
   border: 1px solid grey;
@@ -47,5 +51,9 @@ export const SubscribeButton = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.colours.lightest};
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 `

@@ -43,6 +43,7 @@ export const BlogTitle = styled.h2`
   font-size: ${({ theme, hero }) => hero ? theme.fontSize.font36 : theme.fontSize.font24};
   cursor: pointer;
   text-decoration: none;
+  margin-top: 0;
 
   a {
     text-decoration: none;
