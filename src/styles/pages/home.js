@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components"
-import profile from "../images/profile.jpg"
+import profile from "../../images/profile.jpg"
 
 export const PageContainer = styled.div`
   display: flex;

@@ -1,9 +1,9 @@
 import styled, { css } from "styled-components"
 
-import TwitterIcon from "../svgs/twitter.svg"
-import LinkedInIcon from "../svgs/linkedin.svg"
-import GitHubIcon from "../svgs/github.svg"
-import EmailIcon from "../svgs/email.svg"
+import TwitterIcon from "../../svgs/twitter.svg"
+import LinkedInIcon from "../../svgs/linkedin.svg"
+import GitHubIcon from "../../svgs/github.svg"
+import EmailIcon from "../../svgs/email.svg"
 
 export const PageContainer = styled.div`
   display: flex;

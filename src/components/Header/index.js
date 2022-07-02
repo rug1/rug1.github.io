@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from 'gatsby'
-import { StyledHeader, NavItem, Switch, Slider, Toggle } from "../styledComponents/header"
-import { LIGHT_THEME } from "./provider"
+import { StyledHeader, NavItem, Switch, Slider, Toggle } from "./styles"
+import { LIGHT_THEME } from "../Provider"
 
 const Header = ({ pathname, themeToggler, theme }) => {
   return (

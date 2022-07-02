@@ -2,14 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { ThemeProvider } from "styled-components"
 
-import Header from "../components/header"
-import { Subscribe } from "./Subscribe"
+import Header from "../Header"
+import { Subscribe } from "../Subscribe"
 
-import GlobalStyles from "../styledComponents/global"
-import { ThemeContext } from "./provider";
-import { lightTheme, darkTheme } from "../styledComponents/theme"
+import GlobalStyles from "../../styles/global"
+import { ThemeContext } from "../Provider";
+import { lightTheme, darkTheme } from "../../styles/theme"
 
-import { LIGHT_THEME } from "./provider"
+import { LIGHT_THEME } from "../Provider"
 
 import "animate.css/animate.min.css"
 

@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components"
 import ScrollAnimation from "react-animate-on-scroll"
 
-import ChevronDownIcon from "../svgs/chevron-down.svg"
+import ChevronDownIcon from "../../svgs/chevron-down.svg"
 
 export const SectionContainer = styled.div`
   height: 100vh;

@@ -5,7 +5,7 @@ import {
   SubscribeText,
   SubscribeInput,
   SubscribeButton
-} from '../styledComponents/subscribe';
+} from './styles';
 
 export const Subscribe = () => {
   const [name, setName] = useState("");

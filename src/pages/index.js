@@ -1,9 +1,9 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import TypeAnimation from "../components/typeAnimation"
-import { PageContainer } from "../styledComponents/home"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import TypeAnimation from "../components/TypeAnimation"
+import { PageContainer } from "../styles/pages/home"
 
 const IndexPage = props => (
   <Layout pathname={props.location.pathname}>

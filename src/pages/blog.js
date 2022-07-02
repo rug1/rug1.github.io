@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import {
   PageContainer,
   H1,
@@ -12,7 +12,7 @@ import {
   BlogTitle,
   Featured,
   Hero,
-} from "../styledComponents/blog"
+} from "../styles/pages/blog"
 import SheCanCodeProfilePhoto from "../images/ruth.jpg"
 
 const Blog = props => {

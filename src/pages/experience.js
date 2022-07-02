@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import {
   SectionContainer,
   SectionHeading,
@@ -10,7 +10,7 @@ import {
   ScrollIcon,
   ChevronDown,
   ScrollAnimationWrapper,
-} from "../styledComponents/experience"
+} from "../styles/pages/experience"
 
 class Experience extends React.Component {
   state = { height: 0, headerColour: "#555b6e", headerTextColour: "#ffffff" }

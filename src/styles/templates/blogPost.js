@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { VIEW_HEIGHT } from './global'
+import { VIEW_HEIGHT } from '../global'
 
 const MAX_HEIGHT = '850px';
 const MAX_WIDTH = '770px';

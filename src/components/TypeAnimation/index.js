@@ -1,7 +1,7 @@
 import React from "react"
 
-import checkIfTabIsActive from "../utils/checkIfTabIsActive"
-import { HeroH1, HeroH2, Cursor } from "../styledComponents/home"
+import checkIfTabIsActive from "../../utils/checkIfTabIsActive"
+import { HeroH1, HeroH2, Cursor } from "../../styles/pages/home"
 
 class TypeAnimation extends React.Component {
   state = { typeAnimationText: "", typeAnimationLineCount: 0 }
