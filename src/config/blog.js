@@ -2,20 +2,20 @@ import SheCanCodeProfilePhoto from "../images/ruth.jpg"
 import WorkingProfilePhoto from "../images/working-profile.jpg"
 
 export const blogPosts = [
-  // {
-  //   image: WorkingProfilePhoto,
-  //   date: 'July 02, 2022',
-  //   isFeatured: false,
-  //   isHero: true,
-  //   link: '/blog/frontdesk-to-frontend',
-  //   title: 'Frontdesk to Frontend: My journey to becoming a software engineer',
-  //   description: 'Coming soon. Watch this space.'
-  // },
+  {
+    image: WorkingProfilePhoto,
+    date: 'January 04, 2023',
+    isFeatured: false,
+    isHero: true,
+    link: '/blog/frontdesk-to-frontend',
+    title: 'Front desk to Frontend: My journey to becoming a software engineer',
+    description: 'Not many people know this about me, but when I first stepped into the world of work I was an estate agent, ten months later, I was fired. As we start the New Year, 2023, I thought it apt to reflect on my career journey from the beginning.'
+  },
   {
     image: SheCanCodeProfilePhoto,
     date: 'July 10, 2020',
     isFeatured: true,
-    isHero: true,
+    isHero: false,
     link: 'https://shecancode.io/blog/meet-ruth-uwemedimo-senior-software-engineer-at-lantum',
     title: 'Meet Ruth Uwemedimo, Senior Software Engineer at Lantum',
     description: 'We recently caught up with Ruth Uwemedimo, Senior Software Engineer at Lantum. In this brilliant interview, Ruth shares a whole host of valuable resources to help budding software developers understand how to start their careers in tech.'
