@@ -1,18 +1,31 @@
 import styled, { keyframes } from "styled-components"
-import profile from "../../images/profile.jpg"
+import profile from "../../images/working-profile.jpg"
 
-export const PageContainer = styled.div`
-  display: flex;
+export const BackgroundImageContainer = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
   width: 100%;
+  background-image: url(${profile});
+  background-size: cover;
+  transform: scaleX(-1);
+  background-position: 35% 40%;
+  z-index: -1;
+
+  @media only screen and (max-width: 950px) {
+    background-position: 65% 40%;
+  }
+`
+
+export const HeadingContainer = styled.div`
+  display: flex;
   justify-content: flex-end;
   flex-direction: column;
   padding: ${({ theme }) => theme.spacing.lg};
-  background-image: url(${profile});
-  background-size: cover;
-  background-position: 35% 40%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
   z-index: -1;
 
   @media only screen and (max-width: 950px) {

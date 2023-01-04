@@ -33,11 +33,19 @@ export const NavItem = styled.li`
   font-weight: 600;
 
   a {
-    color: ${({ theme, path }) => path === '/' ? theme.colours.white : theme.textColour};
+    color: ${({ theme, path }) => path === '/' ? theme.colours.black : theme.textColour};
     text-decoration: none;
 
-    &:hover {
+    @media only screen and (max-width: 750px) {
       color: ${({ theme, path }) => path === '/' ? theme.colours.white : theme.textColour};
+    }
+
+    &:hover {
+      color: ${({ theme, path }) => path === '/' ? theme.colours.black : theme.textColour};
+
+      @media only screen and (max-width: 750px) {
+        color: ${({ theme, path }) => path === '/' ? theme.colours.white : theme.textColour};
+      }
     }
   }
 
