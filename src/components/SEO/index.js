@@ -52,6 +52,18 @@ function SEO({ description, lang, meta, title, canonicalURL }) {
           content: `website`,
         },
         {
+          property: `og:url`,
+          content: window.location.href,
+        },
+        {
+          property: `og:image`,
+          content: `https://raw.githubusercontent.com/rug1/rug1.github.io/master-source/src/images/working-profile.jpg`,
+        },
+        {
+          name: `twitter:image`,
+          content: `https://raw.githubusercontent.com/rug1/rug1.github.io/master-source/src/images/working-profile.jpg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
