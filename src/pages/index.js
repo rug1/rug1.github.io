@@ -18,6 +18,9 @@ const IndexPage = props => (
 
 export default IndexPage
 
-export const Head = () => (
-  <SEO title="Home" />
+export const Head = ({ location }) => (
+  <SEO
+    title="Homepage"
+    pathname={location.pathname}
+  />
 )

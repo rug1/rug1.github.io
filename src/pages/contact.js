@@ -59,6 +59,10 @@ const Contact = props => (
 
 export default Contact
 
-export const Head = () => (
-  <SEO title="Contact" />
+export const Head = ({ location }) => (
+  <SEO
+    title="Contact"
+    description="How to contact me."
+    pathname={location.pathname}
+  />
 )

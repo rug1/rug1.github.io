@@ -12,6 +12,10 @@ const NotFoundPage = props => (
 
 export default NotFoundPage
 
-export const Head = () => (
-  <SEO title="404: Not found" />
+export const Head = ({ location }) => (
+  <SEO
+    title="404: Not found"
+    description="Page not found"
+    pathname={location.pathname}
+  />
 )
