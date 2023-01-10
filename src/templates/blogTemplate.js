@@ -25,10 +25,10 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout pathname={location.pathname}>
-      <SEO 
+      {/* <SEO 
         title={`Blog – ${frontmatter.title}`}
         canonicalURL={frontmatter.canonicalURL}
-      />
+      /> */}
       <Hero image={frontmatter.image}>
         <HeroContent>
           <H1>{frontmatter.title}</H1>
@@ -68,3 +68,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const Head = () => (
+  <SEO title="Blog article" />
+)

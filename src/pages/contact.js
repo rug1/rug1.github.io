@@ -16,8 +16,6 @@ import {
 
 const Contact = props => (
   <Layout pathname={props.location.pathname}>
-    <SEO title="Contact" />
-
     <PageContainer>
       <H1>Say hi....</H1>
       <H2>You can find me at</H2>
@@ -60,3 +58,7 @@ const Contact = props => (
 )
 
 export default Contact
+
+export const Head = () => (
+  <SEO title="Contact" />
+)

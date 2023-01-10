@@ -2,10 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Ruth Uwemedimo`,
     description: `Hello. I’m Ruth Uwemedimo, software engineer.`,
+    image: 'https://raw.githubusercontent.com/rug1/rug1.github.io/master-source/src/images/working-profile.jpg',
+    siteUrl: 'https://ruth.io',
     author: `@ruthuwemedimo`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-styled-components`,
     },

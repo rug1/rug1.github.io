@@ -7,7 +7,6 @@ import { BackgroundImageContainer, HeadingContainer } from "../styles/pages/home
 
 const IndexPage = props => (
   <Layout pathname={props.location.pathname}>
-    <SEO title="Home" />
     <BackgroundImageContainer />
     <HeadingContainer>
     <TypeAnimation
@@ -18,3 +17,7 @@ const IndexPage = props => (
 )
 
 export default IndexPage
+
+export const Head = () => (
+  <SEO title="Home" />
+)

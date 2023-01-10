@@ -5,10 +5,13 @@ import SEO from "../components/SEO"
 
 const NotFoundPage = props => (
   <Layout pathname={props.location.pathname}>
-    <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 )
 
 export default NotFoundPage
+
+export const Head = () => (
+  <SEO title="404: Not found" />
+)

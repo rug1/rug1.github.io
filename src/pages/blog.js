@@ -43,7 +43,6 @@ const Blog = props => {
   
   return (
     <Layout pathname={props.location.pathname}>
-      <SEO title="Blog" />
       <PageContainer>
         <H1>The Blog.</H1>
         <Hero>
@@ -77,3 +76,7 @@ const Blog = props => {
 }
 
 export default Blog
+
+export const Head = () => (
+  <SEO title="Blog" />
+)

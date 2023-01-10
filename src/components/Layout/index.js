@@ -11,7 +11,7 @@ import { lightTheme, darkTheme } from "../../styles/theme"
 
 import { LIGHT_THEME } from "../Provider"
 
-import "animate.css/animate.min.css"
+// import "animate.css/animate.min.css"
 
 const Layout = ({ children, pathname }) => (
   <ThemeContext.Consumer>
