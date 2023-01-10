@@ -46,6 +46,9 @@ export const SEO = ({ title, description, image, canonicalURL, pathname, childre
   return (
     <>
       <title>{seo.title}</title>
+      <meta name="theme-color" content="#f8f8ff"/>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta name="title" property='og:title' content={seo.title} />
