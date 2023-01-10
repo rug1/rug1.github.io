@@ -114,6 +114,8 @@ export const Slider = styled.div`
 export const Toggle = styled.div`
   width: 50%;
   text-align: center;
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 `
