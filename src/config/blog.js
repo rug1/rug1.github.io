@@ -8,7 +8,7 @@ export const blogPosts = [
     isFeatured: false,
     isHero: true,
     link: '/blog/frontdesk-to-frontend',
-    title: 'Front desk to Frontend: My journey to becoming a software engineer',
+    title: 'Front desk to Frontend: My journey into software engineering',
     description: 'Not many people know this about me, but when I first stepped into the world of work I was an estate agent, ten months later, I was fired. As we start the New Year, 2023, I thought it apt to reflect on my career journey from the beginning.'
   },
   {
