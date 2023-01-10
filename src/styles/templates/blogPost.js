@@ -92,10 +92,6 @@ export const H1 = styled.h1`
   margin: 0;
   margin-bottom: ${({ theme }) => theme.spacing.lg};
 
-  @media only screen and (max-width: ${MEDIUM_BREAKPOINT}) {
-    font-size: 6vmin;
-  }
-
   @media only screen and (max-width: ${SMALL_BREAKPOINT}) {
     ${smallHeroContent};
   }
